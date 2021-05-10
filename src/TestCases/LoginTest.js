@@ -1,5 +1,4 @@
 const LoginPage = require('../PageObjects/Login')
-const LoginPage = require('../PageObjects/Dashboard')
 const assert = require('assert')
 const Dashboard = require('../PageObjects/Dashboard')
 
@@ -16,7 +15,9 @@ describe('Test login flow', () => {
         .EnterPassword()
         .ClickLoginButton()
         browser.pause(3000)  
-
+        LoginPage.SelectBrand()
+        .SelectCompany()
+        browser.pause(3000)  
 
       })
     

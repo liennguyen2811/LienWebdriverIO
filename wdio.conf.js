@@ -18,11 +18,16 @@ exports.config = {
         platformName:       'Android',
         chromeOptions:      {w3c : false}
     }],
+    framework: 'mocha',
+    mochaOpts: {
+        timeout: 20000
+    },
     logLevel: 'info',
     bail: 0,
     baseUrl: 'http://newtours.demoaut.com/mercurywelcome.php',
     framework: 'mocha',
     reporters: ['spec'],
     ui: 'bdd',
-    timeout: 60000
+    timeout: 60000,
+    waitforTimeout: 5000
 }
