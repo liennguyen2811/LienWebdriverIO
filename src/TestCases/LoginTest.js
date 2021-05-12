@@ -14,11 +14,11 @@ describe('Test login flow', () => {
         .EnterUserName()
         .EnterPassword()
         .ClickLoginButton()
-        browser.pause(3000)  
-        LoginPage.SelectBrand()
+        .SelectBrand()
         .SelectCompany()
         browser.pause(3000)  
-
+        let value = Dashboard.checkIsActiveDocDisplayed()
+        assert.strictEqual(value, true, "Test case should login on successful is failed")
       })
     
 

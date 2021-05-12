@@ -29,5 +29,5 @@ exports.config = {
     reporters: ['spec'],
     ui: 'bdd',
     timeout: 60000,
-    waitforTimeout: 5000
+    waitforTimeout: 10000
 }

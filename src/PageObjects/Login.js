@@ -6,10 +6,8 @@ const login_button = '//*[contains(@resource-id,"filledBackgroundText")]'
 const brand = '//android.widget.TextView[@content-desc="billtobox"]'
 const conpany_fsoft = '//*[@text="Testing"]'
 
-
-
 class Login {
-    ClickLoginAndStart () {
+      ClickLoginAndStart () {
         $(login_and_start).waitForDisplayed({ timeout: 5000 })
         $(login_and_start).click()
         return this
